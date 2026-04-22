@@ -1,9 +1,8 @@
 ---
-title: 'Projects'
+title: 'Portfolio'
 date: 2024-05-19
 type: landing
 
-# Page sections
 sections:
   - block: collection
     content:

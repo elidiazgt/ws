@@ -1,6 +1,6 @@
 ---
 title: Courses
-summary: My courses
+summary: Leadership Workshops and Training
 type: landing
 
 cascade:
@@ -14,7 +14,7 @@ sections:
   - block: collection
     id: courses
     content:
-      title: Courses
+      title: Leadership Workshops
       filters:
         tag: Course
         kinds:

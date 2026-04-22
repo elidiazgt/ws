@@ -1,6 +1,10 @@
 ---
 title: Blog
-view: article-grid
+subtitle: Artículos en Español
+type: blog
+languages:
+  - es
+
 build:
   render: never
 cascade:

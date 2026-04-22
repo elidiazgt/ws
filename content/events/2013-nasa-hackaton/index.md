@@ -1,0 +1,16 @@
+---
+title: "2013 - Nasa Hackaton"
+summary:
+date: 2022-07-15
+type: event
+location: ""
+event_type: Hackathon
+
+tags:
+  - Javascript
+  - PHP
+---
+
+*This app invites to share photos from the past and present of the places where he/she has been. In order to show the world wide climate problems.*
+
+[https://github.com/eliezerdt/spaceappchallenge-earthday-shareyourworld](https://github.com/eliezerdt/spaceappchallenge-earthday-shareyourworld)
