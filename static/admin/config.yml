@@ -1,0 +1,189 @@
+local_backend: true
+backend:
+  name: github
+  repo: elidiazgt/ws
+  branch: main
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "blog_es"
+    label: "Blog (ES)"
+    folder: "content/blog/es"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "courses"
+    label: "Courses"
+    folder: "content/courses"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "services"
+    label: "Services"
+    folder: "content/services"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "publications"
+    label: "Publications"
+    folder: "content/publications"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "notes"
+    label: "Notes"
+    folder: "content/notes"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "contests"
+    label: "Contests"
+    folder: "content/contests"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "research"
+    label: "Research"
+    folder: "content/research"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "resources"
+    label: "Resources"
+    folder: "content/resources"
+    path: "{{slug}}/index"
+    format: yaml-frontmatter
+    extension: md
+    media_folder: ""
+    public_folder: ""
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
