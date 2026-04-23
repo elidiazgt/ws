@@ -1,0 +1,26 @@
+# Navigation Links (Spanish)
+main:
+  - name: Bio
+    url: /bio/
+    weight: 10
+  - name: Servicios
+    url: /services/
+    weight: 20
+  - name: Portafolio
+    url: /projects/
+    weight: 30
+  - name: Investigación
+    url: /research/
+    weight: 40
+  - name: Talleres
+    url: /courses/
+    weight: 50
+  - name: Noticias
+    url: /news/
+    weight: 60
+  - name: Recursos
+    url: /resources/
+    weight: 70
+  - name: Contacto
+    url: /contact/
+    weight: 100

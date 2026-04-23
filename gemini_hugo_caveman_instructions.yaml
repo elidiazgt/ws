@@ -1,0 +1,141 @@
+name: gemini_hugo_funnel_caveman
+ver: 1.0
+lang: en
+mode: caveman
+role: Hugo coding agent
+ctx:
+  stack: Hugo Academic
+  now:
+    types: [posts, projects, talks, publications, authors]
+  tgt:
+    paths: [/about/, /services/, /projects/, /research/, /courses/, /news/, /resources/, /contact/, /events/]
+  goal:
+    primary: consulting leads
+    secondary: workshop leads
+rules:
+  - keep SEO value
+  - keep or redirect old URLs
+  - audit before delete
+  - prefer BOFU over TOFU
+  - prefer clarity over completeness
+  - push user to /services/, /contact/, /courses/
+  - use reusable templates and partials
+  - if unsure, optimize conversion
+steps:
+  - id: audit
+    do:
+      - scan all .md under content/
+      - classify each file
+    fields: [type, title, date, status, funnel_stage, action]
+    vals:
+      status: [complete, outdated, draft]
+      funnel_stage: [TOFU, MOFU, BOFU]
+      action: [keep, rewrite, merge, archive]
+    out: content-audit.csv
+  - id: redirects
+    do:
+      - detect changed URLs
+      - map old to new
+      - use only 301
+    fields: [old_url, new_url, redirect_type]
+    out: url-redirects.csv
+  - id: sections
+    mk:
+      - content/services/_index.md
+      - content/resources/_index.md
+      - content/news/_index.md
+      - content/events/_index.md
+      - content/research/_index.md
+    fm:
+      title: <Section Name>
+      type: page
+  - id: nav
+    order:
+      - {name: Bio, url: /about/, weight: 10}
+      - {name: Services, url: /services/, weight: 20}
+      - {name: Portfolio, url: /projects/, weight: 30}
+      - {name: Research, url: /research/, weight: 40}
+      - {name: Workshops, url: /courses/, weight: 50}
+      - {name: Insights, url: /news/, weight: 60}
+      - {name: Resources, url: /resources/, weight: 70}
+      - {name: Contact, url: /contact/, weight: 100}
+  - id: content
+    tpl:
+      bio:
+        path: content/authors/admin/_index.md
+        sec: [Hook, Journey, Social Proof, CTA:/resources/]
+      services:
+        path: content/services/_index.md
+        sec: [Value proposition, Target clients, Services list, Process, Testimonials, FAQ, CTA]
+        svc_fields: [For, Duration, Deliverables, Results, Price]
+      service_seo:
+        paths:
+          - content/services/llm-consulting.md
+          - content/services/rag-implementation.md
+          - content/services/ai-training.md
+        rules:
+          - one primary keyword per page
+          - end with CTA to contact or discovery call
+      projects:
+        path: content/project/[slug].md
+        sec: [Challenge, Approach, Architecture, Key Decisions, Results, Learnings, Stack, CTA:/contact/]
+      research:
+        path: content/research/[slug].md
+        sec: [TL;DR, Problem Investigated, Methodology, Findings, Practical Applications, Resources, CTA:/services/]
+      resources:
+        path: content/resources/_index.md
+        sec: [Books, Courses, Podcasts/Videos, Email-gated Templates, APIs & SDKs, Email CTA]
+      news:
+        path: content/news/[slug].md
+        sec: [Context, What Failed, Breakthrough, How to Apply, Resources, CTA newsletter]
+      courses:
+        path: content/courses/_index.md
+        sec: [Workshop list, Includes, Testimonials, Corporate offer, CTA]
+        fields: [Duration, Audience, Outcomes, Format, Price]
+      contact:
+        path: content/contact/_index.md
+        sec: [Start Project CTA, Quick Contact, Media/Speaking, Partnerships, Newsletter, Social links]
+      events:
+        path: content/events/[slug].md
+        sec: [What We'll Build, For Whom, Agenda, Outcomes, CTA RSVP]
+  - id: seo
+    fm_rule: 'description: "150-160 chars. primary keyword + soft CTA."'
+    schema:
+      path: layouts/partials/schema.html
+      type: ProfessionalService
+      serviceType: [AI Consulting, LLM Implementation, AI Training]
+      areaServed: Global
+  - id: internal_links
+    hard:
+      - Bio -> Services x2
+      - each Project -> Services x1
+      - each Research -> Services x1
+      - Resources -> Newsletter x3
+      - Services -> Projects
+      - Services -> Workshops
+  - id: cta_components
+    mk:
+      - layouts/shortcodes/cta-button.html
+      - layouts/partials/testimonial-card.html
+      - layouts/partials/client-logos.html
+      - layouts/partials/stats-counter.html
+      - layouts/partials/email-gate.html
+    cta_types:
+      primary: Calendly
+      secondary: Email
+      tertiary: Learn more
+  - id: analytics
+    mk:
+      - layouts/partials/analytics.html
+    track: [cta_click, email_signup, calendly_opened]
+    heatmaps: [/services/, /about/, /contact/, top_3_projects]
+checks:
+  - no critical page missing description
+  - redirect map has no collisions
+  - /services/ exists and is in nav
+  - every BOFU page has CTA
+  - no delete before audit
+  - internal link rules satisfied
+fail_mode:
+  - if facts missing, keep structure, use placeholders, continue
+  - stop only on repo or filesystem blocker

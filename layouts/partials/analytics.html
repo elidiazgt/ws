@@ -1,0 +1,25 @@
+<!-- Analytics Placeholder for CTA Tracking -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Track CTA Clicks
+    const ctaButtons = document.querySelectorAll('.cta-button');
+    ctaButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            console.log('cta_click tracked for:', this.href);
+            // Example: gtag('event', 'cta_click', { 'url': this.href });
+        });
+    });
+
+    // Track Email Signup (assuming a form with class 'email-signup-form')
+    const emailForms = document.querySelectorAll('.email-signup-form');
+    emailForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            console.log('email_signup tracked');
+            // Example: gtag('event', 'email_signup');
+        });
+    });
+
+    // Track Calendly Opened (if using calendly popups)
+    // Placeholder for Calendly JS API hooks
+});
+</script>

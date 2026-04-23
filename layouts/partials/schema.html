@@ -1,0 +1,19 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description | default .Site.Title }}",
+  "serviceType": [
+    "AI Consulting",
+    "LLM Implementation",
+    "AI Training"
+  ],
+  "areaServed": "Global",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "Global"
+  }
+}
+</script>

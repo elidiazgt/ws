@@ -1,0 +1,91 @@
+file_path,type,title,date,status,funnel_stage,action
+content/_index.md,landing,Meridian,2024-01-01,complete,TOFU,keep
+content/experience.md,landing,Experience,2023-10-24,complete,MOFU,rewrite
+content/bio/_index.md,landing,Bio,,complete,TOFU,keep
+content/blog/_index.md,,Blog,,complete,TOFU,archive
+content/blog/es/_index.md,blog,Blog,,complete,TOFU,archive
+content/blog/es/como-blockchain-puede-beneficiar-a-las-empresas-latinoamericanas/index.md,post,Cómo Blockchain puede beneficiar a las empresas latinoamericanas,2020-10-14,complete,TOFU,archive
+content/blog/es/como-he-estado-aprendiendo-sobre-la-tecnologia-blockchain/index.md,post,Como he estado aprendiendo sobre la tecnología Blockchain,2022-05-18,complete,TOFU,archive
+content/blog/es/conviertase-en-un-lider-y-asuma-la-responsabilidad-de-usted-mismo-su-familia-y-su-comunidad/index.md,post,"Conviértase en un líder y asuma la responsabilidad de usted mismo, su familia y su comunidad.",2022-03-23,complete,TOFU,archive
+content/blog/es/cual-es-el-costo-de-construir-una-vida-de-la-que-pueda-estar-orgulloso/index.md,post,¿Cuál es el costo de construir una vida de la que pueda estar orgulloso?,2022-03-23,complete,TOFU,archive
+content/blog/es/el-apego-al-capital-como-obstaculo-para-crecer/index.md,post,El apego al capital como obstáculo para crecer.,2022-03-23,complete,TOFU,archive
+content/blog/es/el-lenguaje-es-la-base-de-todo/index.md,post,El lenguaje es la base de todo,2022-12-11,complete,TOFU,archive
+content/blog/es/el-valor-y-el-precio-son-siempre-relativos-en-relacion-con-el-mercado/index.md,post,El valor y el precio son siempre relativos en relación con el mercado.,2022-03-23,complete,TOFU,archive
+content/blog/es/estudiar-blockchain-en-el-m-i-t/index.md,post,Estudiar Blockchain en el M.I.T.,2022-03-22,complete,TOFU,archive
+content/blog/es/ethereum-con-pizza-y-pasta-en-milan/index.md,post,Ethereum con Pizza y Pasta en Milan,2022-11-09,complete,TOFU,archive
+content/blog/es/la-evolucion-historica-del-intercambio-de-datos/index.md,post,La Evolución histórica del Intercambio de datos,2022-04-17,complete,TOFU,archive
+content/blog/es/la-ilusion-colectiva-del-valor-del-dinero/index.md,post,La ilusión colectiva del valor del dinero.,2022-03-23,complete,TOFU,archive
+content/blog/es/la-innovacion-internacional-se-concentra-en-msterdam/index.md,post,La innovación internacional se concentra en Ámsterdam,2022-11-01,complete,TOFU,archive
+content/blog/es/la-razon-emocional-por-la-que-hacemos-lo-que-hacemos/index.md,post,La razón emocional por la que hacemos lo que hacemos,2022-03-23,complete,TOFU,archive
+content/blog/es/la-tokenizacion-de-todo-esta-cambiando-la-industria-financiera-pero-que-beneficios-aporta-esto-a-las-empresas/index.md,post,"La tokenización de todo está cambiando la industria financiera, pero ¿qué beneficios aporta esto a las empresas?",2022-05-07,complete,TOFU,archive
+content/blog/es/lo-que-aprendi-trabajando-una-decada-en-tecnologia/index.md,post,Lo que aprendí trabajando una década en tecnologia,2022-03-23,complete,TOFU,archive
+content/blog/es/mi-experiencia-en-blockchain-week-barcelona-2022/index.md,post,Mi experiencia en Blockchain Week Barcelona 2022,2022-10-07,complete,TOFU,archive
+content/blog/es/my-experiencia-en-el-praga-ethereum-hackaton/index.md,post,My experiencia en el Praga Ethereum Hackaton,2022-11-18,complete,TOFU,archive
+content/blog/es/paris-blockchain-week-summit/index.md,post,Paris Blockchain Week Summit,2022-10-13,complete,TOFU,archive
+content/blog/es/por-que-comunicarse-con-respeto-aumentara-tus-posibilidades-de-exito-en-los-negocios/index.md,post,Por qué comunicarse con respeto aumentará tus posibilidades de éxito en los negocios,2022-03-23,complete,TOFU,archive
+content/blog/es/tres-pilares-para-tener-la-puntualidad-que-deseas-en-tu-vida/index.md,post,Tres pilares para tener la puntualidad que deseas en tu vida,2022-03-23,complete,TOFU,archive
+content/contests/_index.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2005 - Internet Services - Galileo University.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2012 - Startup Weekend.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2013 - M&C - Best Backend Hire.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2013 - Nasa Hackaton.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2014 - Startup Weekend - UFM.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2015 - Startup Weekend - Landivar.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2018 - Startup Weekend Blockchain Edition - New Yo.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2019 - Blockchain Week Blockchain Hackaton.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2020 - Global GameJam.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2020 - Meet Vitalik at Stanford Blockchain Confere.md,,,,draft,TOFU,keep
+"content/contests/tech contest and hackatons/2020 - World Blockchain Hackaton, San Francisco.md",,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2020 DeveloperWeek Hackathon - San Francisco.md,,,,draft,TOFU,keep
+content/contests/tech contest and hackatons/2022 - Bounty Winner at Mobile Hackaton Celo Barce.md,,,,draft,TOFU,keep
+content/courses/_index.md,landing,Courses,,complete,BOFU,keep
+content/events/_index.md,landing,Events,,complete,TOFU,keep
+content/events/2005-internet-services-galileo-university/index.md,event,2005 - Internet Services - Galileo University,2022-07-15,complete,TOFU,keep
+content/events/2012-startup-weekend/index.md,event,2012 - Startup Weekend,2022-07-15,complete,TOFU,keep
+content/events/2013-m-c-best-backend-hire/index.md,event,2013 - M&C - Best Backend Hire,2022-07-15,complete,TOFU,keep
+content/events/2013-nasa-hackaton/index.md,event,2013 - Nasa Hackaton,2022-07-15,complete,TOFU,keep
+content/events/2014-startup-weekend-ufm/index.md,event,2014 - Startup Weekend - UFM,2022-07-15,complete,TOFU,keep
+content/events/2015-startup-weekend-landivar/index.md,event,2015 - Startup Weekend - Landivar,2022-07-15,complete,TOFU,keep
+content/events/2018-startup-weekend-blockchain-edition-new-york/index.md,event,2018 - Startup Weekend Blockchain Edition - New York,2023-05-03,complete,TOFU,keep
+content/events/2019-blockchain-week-blockchain-hackaton/index.md,event,2019 - Blockchain Week // Blockchain Hackaton,2022-07-15,complete,TOFU,keep
+content/events/2020-developerweek-hackathon-san-francisco/index.md,event,2020 DeveloperWeek Hackathon - San Francisco,2022-07-22,complete,TOFU,keep
+content/events/2020-global-gamejam/index.md,event,2020 - Global GameJam,2022-07-16,complete,TOFU,keep
+content/events/2020-meet-vitalik-at-stanford-blockchain-conference/index.md,event,2020 - Meet Vitalik at Stanford Blockchain Conference,2022-07-15,complete,TOFU,keep
+content/events/2020-world-blockchain-hackaton-san-francisco/index.md,event,"2020 - World Blockchain Hackaton, San Francisco",2023-04-17,complete,TOFU,keep
+content/events/2022-bounty-winner-at-mobile-hackaton-celo-barcelona/index.md,event,2022 - Bounty Winner at Mobile Hackaton Celo Barcelona,2022-07-15,complete,TOFU,keep
+content/news/_index.md,landing,News,,complete,TOFU,archive
+content/newsletter/_index.md,landing,Newsletter,,complete,TOFU,keep
+content/profile/_index.md,landing,Profile,,complete,TOFU,keep
+content/projects/_index.md,landing,Portfolio,2024-05-19,complete,MOFU,rewrite
+content/projects/autobytel/index.md,project,Autobytel.com,2022-05-27,complete,MOFU,rewrite
+content/projects/betheboss/index.md,project,BetheBoss.com,2022-05-27,complete,MOFU,rewrite
+content/projects/hp-device-wise/index.md,project,HP Device Wise,2022-05-27,complete,MOFU,rewrite
+content/projects/loreal/index.md,project,Loreal,2022-05-21,complete,MOFU,rewrite
+content/projects/nextjs-message-delivery-platform/index.md,project,Nextjs Message delivery platform,2022-05-27,complete,MOFU,rewrite
+content/projects/samsung-and-lg-tv-application/index.md,project,Samsung and LG TV Application,2022-05-27,complete,MOFU,rewrite
+content/publications/_index.md,landing,Publications,,complete,TOFU,keep
+content/resources/_index.md,landing,Resources,,complete,TOFU,keep
+content/resources/old spanish articles/Blockchains en la Nube ¿Cómo puede Blockchain conv.md,post,Blockchains en la Nube: ¿Cómo puede Blockchain convertirse en un Servicio?,2022-03-22,complete,TOFU,keep
+content/resources/old spanish articles/Como he estado aprendiendo sobre la tecnología Blo.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Conviértase en un líder y asuma la responsabilidad.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Cómo Blockchain puede beneficiar a las empresas la.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/El apego al capital como obstáculo para crecer.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/El lenguaje es la base de todo.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/El valor y el precio son siempre relativos en rela.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Estudiar Blockchain en el M I T.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Ethereum con Pizza y Pasta en Milan.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/La Evolución histórica del Intercambio de datos.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/La ilusión colectiva del valor del dinero.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/La innovación internacional se concentra en Ámster.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/La razón emocional por la que hacemos lo que hacem.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/La tokenización de todo está cambiando la industri.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Lo que aprendí trabajando una década en tecnologia.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Mi experiencia en Blockchain Week Barcelona 2022.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/My experiencia en el Praga Ethereum Hackaton.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Paris Blockchain Week Summit.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Por qué comunicarse con respeto aumentará tus posi.md,,,,draft,TOFU,keep
+content/resources/old spanish articles/Tres pilares para tener la puntualidad que deseas .md,,,,draft,TOFU,keep
+content/resources/old spanish articles/¿Cuál es el costo de construir una vida de la que .md,,,,draft,TOFU,keep
+content/services/_index.md,landing,Services,,complete,BOFU,keep
+content/social/_index.md,landing,Social,,complete,TOFU,keep
+content/notes/2026-04-23T04-40-17.md,,Note 1 (Wednesday 22nd April),2026-04-23T04:40:17.800Z,complete,TOFU,keep

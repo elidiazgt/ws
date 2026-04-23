@@ -1,101 +1,87 @@
-schema: hugoblox/author/v1
-slug: me
+schema: "hugoblox/author/v1"
+slug: "me"
 is_owner: true
 name:
-  display: Sir Eli Diaz
-  given: Eli
-  family: Diaz
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
-  pronouns: 
-postnominals:
+  display: "Eli Diaz - The Meridian Sherpa"
+  given: "Eli"
+  family: "Diaz"
+  alternate: ""
+  pronunciation: ""
+  pronouns: null
+postnominals: null
 status:
   icon: "☕️"
-role: Vantage Advisor
-bio: |
-  Vantage Advisor. Strategic clarity and tech infrastructure for a lasting legacy.
-
+role: "Fintech Vantage Advisor"
+bio: "Building global legacies with strategic infrastructure and synthetic agents, turning financial complexity into clear, executable paths for visionary leaders"
 affiliations:
-  - name: Clabs
-    url: https://ai.meta.com/
-
+  - name: "Clabs"
+    url: "https://ai.meta.com/"
 links:
-  - icon: at-symbol
-    url: mailto:solution@elidiaz.com
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/elidiazgt
-  - icon: brands/github
-    url: https://github.com/elidiazgt
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/elidiazgt/
-
-
+  - icon: "at-symbol"
+    url: "mailto:solution@elidiaz.com"
+    label: "E-mail Me"
+  - icon: "brands/x"
+    url: "https://x.com/elidiazgt"
+  - icon: "brands/github"
+    url: "https://github.com/elidiazgt"
+  - icon: "brands/linkedin"
+    url: "https://www.linkedin.com/in/elidiazgt/"
 interests:
-  - Large Language Models
-  - Reinforcement Learning
-  - AI Ethics
-  - Blockchain
-
+  - "Large Language Models"
+  - "Reinforcement Learning"
+  - "AI Ethics"
+  - "Blockchain"
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+  - degree: "PhD Computer Science"
+    institution: "Stanford University"
+    start: "2015-09-01"
+    end: "2019-06-30"
+    summary: "Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.\n"
     button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  
-
+      text: "Download dissertation"
+      url: "/resume.pdf"
+      icon: "hero/arrow-down-tray"
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+  - role: "Senior AI Research Scientist"
+    org: "Meta AI"
+    start: "2020-01-01"
+    summary: "Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.\n"
     button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
-
+      text: "View portfolio"
+      url: "/"
+      icon: "hero/arrow-down-tray"
+  - role: "AI Research Intern"
+    org: "OpenAI"
+    start: "2019-06-01"
+    end: "2019-12-31"
+    summary: "Worked on GPT-3 scaling. Co-authored paper on prompt engineering.\n"
 skills:
-  - name: Technical Skills
+  - name: "Technical Skills"
     items:
-      - label: Python
+      - label: "Python"
         level: 5
-      - label: Machine Learning
+      - label: "Machine Learning"
         level: 5
-      - label: Cloud Computing
+      - label: "Cloud Computing"
         level: 4
-  - name: Research & Communication
+  - name: "Research & Communication"
     items:
-      - label: Academic Writing
+      - label: "Academic Writing"
         level: 5
-      - label: Conference Presentations
+      - label: "Conference Presentations"
         level: 4
-      - label: Grant Proposals
+      - label: "Grant Proposals"
         level: 4
-
 languages:
-  - name: Spanish
+  - name: "Spanish"
     level: 5
-    label: Native
-  - name: English
+    label: "Native"
+  - name: "English"
     level: 4
-    label: Fluent
-
+    label: "Fluent"
 awards:
-  - title: Best PEaper Award
-    awarder: NeurIPS
+  - title: "Best PEaper Award"
+    awarder: "NeurIPS"
     date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+    summary: "Awarded for groundbreaking work on efficient training of large models."
+    icon: "hero/trophy"
