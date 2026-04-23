@@ -1,0 +1,31 @@
+<ul class="children-list">
+  {{ range .Page.Pages }}
+  <li>
+    <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+    {{ if .Description }}
+      <p>{{ .Description }}</p>
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>
+
+<style>
+.children-list {
+  list-style: none;
+  padding-left: 0;
+}
+.children-list li {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+}
+.children-list h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.children-list p {
+  margin: 0;
+  color: #6c757d;
+}
+</style>
