@@ -1,0 +1,90 @@
+<div class="contact-gate-wrapper bg-gray-900 text-white p-8 rounded-lg shadow-xl mb-12">
+    <h3 class="text-2xl font-semibold mb-6">Request a Strategic Diagnostic Call</h3>
+    
+    <div id="qualification-form">
+        <div class="mb-6">
+            <label class="block text-sm font-medium mb-2" for="complexity">1. Primary complexity</label>
+            <select id="complexity" class="w-full bg-gray-800 border border-gray-700 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+                <option value="">Select your focus...</option>
+                <option value="the-compass">Mapping & Clarity</option>
+                <option value="the-blueprint">Legacy Architecture</option>
+                <option value="the-route">Regulatory Navigation</option>
+                <option value="not-sure">Not Sure</option>
+            </select>
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-sm font-medium mb-2" for="horizon">2. Implementation horizon</label>
+            <select id="horizon" class="w-full bg-gray-800 border border-gray-700 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+                <option value="">Select timeframe...</option>
+                <option value="0-3mo">0-3 Months</option>
+                <option value="3-6mo">3-6 Months</option>
+                <option value="6-12mo">6-12 Months</option>
+                <option value="12mo+">12+ Months</option>
+            </select>
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-sm font-medium mb-2" for="scale">3. Approximate estate or project scale</label>
+            <select id="scale" class="w-full bg-gray-800 border border-gray-700 rounded-md p-3 focus:ring-2 focus:ring-blue-500">
+                <option value="">Select scale...</option>
+                <option value="<$1M">Under $1M</option>
+                <option value="$1M-$10M">$1M - $10M</option>
+                <option value="$10M-$50M">$10M - $50M</option>
+                <option value="$50M+">$50M+</option>
+            </select>
+        </div>
+        
+        <button id="check-qualification" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-200">
+            Continue to Scheduling
+        </button>
+    </div>
+
+    <div id="calendly-container" class="hidden mt-8 border-t border-gray-700 pt-8">
+        <h4 class="text-xl mb-4">Schedule your 45-min diagnostic call</h4>
+        <p class="text-sm text-gray-400 mb-6">Note: A 'what we'll cover' confirmation will be sent upon booking.</p>
+        
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="{{ .Get `calendly_url` | default `https://calendly.com/elidiaz` }}" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+    </div>
+    
+    <div id="not-ready-fallback" class="hidden mt-8 border-t border-gray-700 pt-8 text-center">
+        <p class="mb-4 text-gray-300">Based on your timeline, you might find more value in our current dispatches before scheduling a call.</p>
+        <a href="/insights/" class="inline-block border border-gray-500 hover:border-white text-white font-semibold py-2 px-6 rounded transition duration-200">Read the latest Dispatches</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkBtn = document.getElementById('check-qualification');
+        const qForm = document.getElementById('qualification-form');
+        const calendlyContainer = document.getElementById('calendly-container');
+        const fallbackContainer = document.getElementById('not-ready-fallback');
+        
+        const complexitySelect = document.getElementById('complexity');
+        const horizonSelect = document.getElementById('horizon');
+        const scaleSelect = document.getElementById('scale');
+
+        checkBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const complexity = complexitySelect.value;
+            const horizon = horizonSelect.value;
+            const scale = scaleSelect.value;
+
+            if (!complexity || !horizon || !scale) {
+                alert('Please answer all 3 questions to proceed.');
+                return;
+            }
+
+            // Simple logic: if 12mo+ and <$1M, maybe route to fallback. 
+            // The agent spine does not specify strict exclusion rules for the Calendly gate, 
+            // only that it requires all 3 to be answered.
+            // Let's just require them all to be answered.
+            qForm.style.display = 'none';
+            calendlyContainer.classList.remove('hidden');
+        });
+    });
+</script>

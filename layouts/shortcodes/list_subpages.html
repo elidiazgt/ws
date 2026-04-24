@@ -1,0 +1,15 @@
+{{ $section := .Get "section" }}
+{{ $pages := where .Site.RegularPages "Section" $section }}
+{{ if $pages }}
+<ul class="space-y-4">
+    {{ range $pages }}
+    <li class="border-l-2 border-gray-700 pl-4 py-2 hover:border-blue-500 transition">
+        <a href="{{ .RelPermalink }}" class="text-lg font-medium hover:text-blue-400 transition">{{ .Title }}</a>
+        {{ with .Description }}<p class="text-sm text-gray-400 mt-1">{{ . }}</p>{{ end }}
+        {{ with .Date }}<span class="text-xs text-gray-600">{{ .Format "January 2006" }}</span>{{ end }}
+    </li>
+    {{ end }}
+</ul>
+{{ else }}
+<p class="text-gray-500 italic">No entries yet. Check back soon.</p>
+{{ end }}

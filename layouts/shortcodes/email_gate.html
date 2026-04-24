@@ -1,0 +1,45 @@
+<div class="email-gate-wrapper bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-md my-8 border-l-4 border-blue-600">
+    <h3 class="text-xl font-semibold mb-2">Request Access to Strategic Tools</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-300 mb-6">These are strategic tools Eli makes available to qualified prospects. Direct downloads are not provided.</p>
+    
+    <form class="space-y-4" action="#" method="POST" id="resource-request-form">
+        <input type="hidden" name="resource_requested" value="{{ .Get `resource_name` | default `General Resource` }}">
+        
+        <div>
+            <label class="block text-sm font-medium mb-1" for="name">Name</label>
+            <input type="text" id="name" name="name" required class="w-full bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+        </div>
+        
+        <div>
+            <label class="block text-sm font-medium mb-1" for="email">Email address</label>
+            <input type="email" id="email" name="email" required class="w-full bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:ring-2 focus:ring-blue-500">
+        </div>
+        
+        <div>
+            <label class="block text-sm font-medium mb-1" for="context">Context: How will you use this?</label>
+            <textarea id="context" name="context" rows="3" required class="w-full bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-md p-2 focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        
+        <button type="submit" class="bg-gray-900 hover:bg-black dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-medium py-2 px-6 rounded transition duration-200">
+            Request Access
+        </button>
+    </form>
+    
+    <div id="request-success" class="hidden mt-4 p-4 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded">
+        Your request has been received. Our team will review your context and send the materials to the provided email if qualified.
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('resource-request-form');
+        const successMsg = document.getElementById('request-success');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Assuming we'd handle the actual submission via fetch to formspree or similar
+            form.style.display = 'none';
+            successMsg.classList.remove('hidden');
+        });
+    });
+</script>
