@@ -1,0 +1,366 @@
+/* ============================================
+   BRAND STYLING - Mercedes-Benz inspired clean luxury
+   with Rolex-inspired green accents
+   ============================================ */
+
+:root {
+  /* White/light base (Mercedes-Benz style) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f8f8;
+  --bg-tertiary: #f0f0f0;
+  --bg-dark: #1a1a1a;
+  
+  /* Black text sections */
+  --text-primary: #111111;
+  --text-secondary: #333333;
+  --text-muted: #666666;
+  
+  /* Rolex-inspired green */
+  --brand-green: #1a5d1a;
+  --brand-green-light: #2d8a2d;
+  --brand-green-gold: #3d6b1f;
+  
+  /* Borders */
+  --border-light: #e5e5e5;
+  --border-dark: #1a1a1a;
+}
+
+/* ============================================
+   GLOBAL RESET
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* ============================================
+   NAVBAR - Clean white with dark text
+   ============================================ */
+
+.navbar {
+  background: var(--bg-primary) !important;
+  border-bottom: 2px solid var(--border-dark) !important;
+  padding: 1rem 2rem !important;
+  min-height: 70px !important;
+}
+
+.navbar-brand {
+  font-size: 0.85rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+}
+
+.navbar-brand:hover {
+  color: var(--brand-green) !important;
+}
+
+.navbar-nav {
+  background: var(--bg-primary) !important;
+}
+
+.nav-item {
+  margin: 0 !important;
+}
+
+.nav-link {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: var(--text-secondary) !important;
+  padding: 0.75rem 1.25rem !important;
+  transition: color 0.2s ease !important;
+  font-weight: 500 !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--brand-green) !important;
+  background: transparent !important;
+}
+
+/* ============================================
+   HEADER ACTIONS - Language only, no search
+   ============================================ */
+
+.header-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+/* Hide search toggle completely */
+[data-search-toggle] {
+  display: none !important;
+}
+
+/* Language chooser - Clean button style */
+[data-hb-language-chooser] {
+  background: transparent !important;
+  border: 1px solid var(--border-dark) !important;
+  color: var(--text-primary) !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  font-weight: 500 !important;
+}
+
+[data-hb-language-chooser]:hover {
+  background: var(--brand-green) !important;
+  border-color: var(--brand-green) !important;
+  color: white !important;
+}
+
+/* ============================================
+   FOOTER - Clean minimal
+   ============================================ */
+
+footer {
+  background: var(--bg-primary) !important;
+  border-top: 2px solid var(--border-dark) !important;
+  padding: 3rem 2rem !important;
+}
+
+footer a {
+  color: var(--text-primary) !important;
+  transition: color 0.2s ease !important;
+}
+
+footer a:hover {
+  color: var(--brand-green) !important;
+}
+
+/* ============================================
+   TYPOGRAPHY - Clean, readable
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+  font-weight: 500 !important;
+  color: var(--text-primary) !important;
+  line-height: 1.3 !important;
+}
+
+h1 { font-size: 2.5rem; letter-spacing: 0.02em; }
+h2 { font-size: 2rem; letter-spacing: 0.01em; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ============================================
+   HERO - Full width, clean
+   ============================================ */
+
+.hero {
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 80vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 3rem !important;
+  font-weight: 400 !important;
+  color: white !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  letter-spacing: 0.05em !important;
+}
+
+.hero-subtitle,
+.hero p {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+a {
+  color: var(--brand-green) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+a:hover {
+  color: var(--brand-green-gold) !important;
+}
+
+/* ============================================
+   BUTTONS - Clean black/white style
+   ============================================ */
+
+.btn-primary,
+.btn {
+  background: var(--text-primary) !important;
+  border: 2px solid var(--text-primary) !important;
+  color: white !important;
+  padding: 0.875rem 2rem !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  transition: all 0.2s ease !important;
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+}
+
+.btn:hover {
+  background: var(--brand-green) !important;
+  border-color: var(--brand-green) !important;
+  color: white !important;
+}
+
+.btn-outline {
+  background: transparent !important;
+  border: 2px solid var(--text-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.btn-outline:hover {
+  background: var(--text-primary) !important;
+  color: white !important;
+}
+
+/* ============================================
+   CARDS & SECTIONS - Clean borders
+   ============================================ */
+
+.card,
+.article-card,
+.service-card {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-light) !important;
+  transition: all 0.3s ease !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.card:hover,
+.article-card:hover,
+.service-card:hover {
+  border-color: var(--brand-green) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* ============================================
+   SECTION STYLING
+   ============================================ */
+
+section {
+  padding: 5rem 0 !important;
+}
+
+.section-dark {
+  background: var(--bg-dark) !important;
+  color: white !important;
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark p {
+  color: white !important;
+}
+
+.section-dark a {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.section-light {
+  background: var(--bg-secondary) !important;
+}
+
+/* ============================================
+   FORMS - Clean inputs
+   ============================================ */
+
+input, textarea, select {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--border-light) !important;
+  color: var(--text-primary) !important;
+  border-radius: 0 !important;
+  padding: 0.875rem 1rem !important;
+  font-size: 1rem !important;
+  transition: border-color 0.2s ease !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  border-color: var(--brand-green) !important;
+}
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+
+.text-center { text-align: center; }
+.text-muted { color: var(--text-muted) !important; }
+.border-bottom { border-bottom: 1px solid var(--border-light) !important; }
+
+/* ============================================
+   MOBILE MENU - Clean overlay
+   ============================================ */
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--bg-primary) !important;
+    border-top: 1px solid var(--border-light) !important;
+  }
+  
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    display: block !important;
+    position: fixed !important;
+    top: 70px !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: var(--bg-primary) !important;
+    z-index: 1000 !important;
+    padding: 2rem !important;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem !important;
+    padding: 1rem 0 !important;
+    border-bottom: 1px solid var(--border-light) !important;
+  }
+}
+
+/* ============================================
+   ANIMATIONS - Subtle
+   ============================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.5s ease forwards;
+}

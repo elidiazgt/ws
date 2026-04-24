@@ -1,34 +1,36 @@
 hugoblox:
   schema: "2.0"
+  head_custom_includes:
+    - "<link href=\"/css/luxury.css\" rel=\"stylesheet\">"
   identity:
     name: Eli Diaz - The Meridian Sherpa
     type: person
-    tagline: Empowering global legacies through strategic infrastructure and total financial clarity.
-    description: Building global legacies with strategic infrastructure and synthetic agents, turning wealth complexity into clear, executable paths for visionary leaders.
+    tagline: Strategic advisory for those who build legacies beyond borders.
+    description: Guiding exceptional families through the complexity of global wealth. No products sold. No commissions taken. Clarity as the only currency.
   theme:
-    mode: system
+    mode: dark
     pack: matcha
     colors:
-      primary: ""
-      secondary: ""
-      neutral: ""
+      primary: "#c9a962"
+      secondary: "#1a1a1a"
+      neutral: "#0a0a0a"
   typography:
     font: serif
-    size: lg
+    size: xl
   layout:
-    radius: md
-    spacing: comfortable
-    avatar_shape: circle
+    radius: none
+    spacing: spacious
+    avatar_shape: rounded
   header:
     enable: true
     style: navbar
     sticky: true
     align: center
-    search: true
-    theme_toggle: true
+    search: false
+    theme_toggle: false
   footer:
     style: minimal
-    language_switcher: true
+    language_switcher: false
   copyright:
     notice: © {year} {name}
   content:
